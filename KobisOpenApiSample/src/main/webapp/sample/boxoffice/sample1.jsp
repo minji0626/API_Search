@@ -90,25 +90,6 @@
 			<input type="submit" name="" value="조회">
 	</form>
 	
-	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-<script src="https://cdn.iamport.kr/js/iamport.payment-1.2.1.js"></script>
 
-<button onclick="requestPay()">충전하기</button>
-
-
-
-<script>
-IMP.init("imp83031471");
-
-function requestPay() {
-  IMP.request_pay({
-    pg: "nice",
-    pay_method: "card",
-    merchant_uid: "test_ly1e27st",
-    amount: 5000,
-    buyer_tel: "010-1234-5678",
-  });
-}
-</script>
 </body>
 </html>
