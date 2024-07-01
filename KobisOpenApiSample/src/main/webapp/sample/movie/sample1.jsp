@@ -24,7 +24,7 @@
 	String itemPerPage = request.getParameter("itemPerPage")==null?"10":request.getParameter("itemPerPage");		//결과row수
 	String movieNm = request.getParameter("movieNm")==null?"":request.getParameter("movieNm");						//영화명
 	String directorNm = request.getParameter("directorNm")==null?"":request.getParameter("directorNm");				//감독명
-	String openStartDt = request.getParameter("openStartDt")==null?"":request.getParameter("openStartDt");			//개봉연도 시작조건 ( YYYY )
+	String openStartDt = request.getParameter("openStartDt")==null?"2024":request.getParameter("openStartDt");			//개봉연도 시작조건 ( YYYY )
 	String openEndDt = request.getParameter("openEndDt")==null?"":request.getParameter("openEndDt");				//개봉연도 끝조건 ( YYYY )	
 	String prdtStartYear = request.getParameter("prdtStartYear")==null?"":request.getParameter("prdtStartYear");	//제작연도 시작조건 ( YYYY )
 	String prdtEndYear = request.getParameter("prdtEndYear")==null?"":request.getParameter("prdtEndYear");			//제작연도 끝조건    ( YYYY )
@@ -87,7 +87,7 @@ $(function(){
 	<c:out value="${result.movieListResult.totCnt}"/>
 	<table border="1">
 		<tr>
-			<td>영화명</td><td>영화명(영)</td><td>제작연도</td><td>개봉연도</td><td>제작국가</td><td>감독</td>
+			<td>영화명</td><td>영화명(영)</td><td>제작연도</td><td>개봉연도</td><td>제작국가</td><td>감독</td><td>장르</td>
 			<td>참여영화사</td>
 		</tr>
 	<c:if test="${not empty result.movieListResult.movieList}">
@@ -95,12 +95,13 @@ $(function(){
 		<tr>
 			<td><c:out value="${movie.movieNm }"/></td><td><c:out value="${movie.movieNmEn }"/></td><td><c:out value="${movie.prdtYear }"/></td><td><c:out value="${movie.openDt }"/></td>
 			<td><c:out value="${movie.repNationNm}"/></td><td><c:forEach items="${movie.directors}" var="director"><c:out value="${director.peopleNm}"/>,</c:forEach></td>
+			<td><c:out value="${movie.repGenreNm }"/></td>
 			<td><c:forEach items="${movie.companys}" var="company"><c:out value="${company.companyNm}"/>,</c:forEach></td>			
 		</tr>
 	</c:forEach>
 	</c:if>
 	</table>
-	<form action="">
+	<form action=""> 
 		현재페이지 :<input type="text" name="curPage" value="<%=curPage %>">
 		최대 출력갯수:<input type="text" name="itemPerPage" value="<%=itemPerPage %>">
 		감독명:<input type="text" name="directorNm" value="<%=directorNm %>">		

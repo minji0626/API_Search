@@ -1,57 +1,57 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-	pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
 </head>
 <body>
-	<h3>KOBIS ¿ÀÇÂAPI SAMPLE</h3>
+	<h3>KOBIS ì˜¤í”ˆAPI SAMPLE</h3>
 	<dl>
-		<dt>¹Ú½º¿ÀÇÇ½º</dt>
+		<dt>ë°•ìŠ¤ì˜¤í”¼ìŠ¤</dt>
 		<dd>
 			<ol>
-				<li><a href="<c:url value="/sample/boxoffice/sample1.jsp"/>">ÀÏº°¹Ú½º¿ÀÇÇ½º
-						REST ¿¹Á¦</a></li>
-				<li><a href="<c:url value="/sample/boxoffice/sample2.jsp"/>">ÁÖ°£/ÁÖ¸»
-						¹Ú½º¿ÀÇÇ½º REST(JAVASCRIPT) ¿¹Á¦</a></li>
-				<li><a href="<c:url value="/sample/boxoffice/sample3.jsp"/>">ÀÏº°
-						¹Ú½º¿ÀÇÇ½º SOAP ¿¹Á¦</a></li>
+				<li><a href="<c:url value="/sample/boxoffice/sample1.jsp"/>">ì¼ë³„ë°•ìŠ¤ì˜¤í”¼ìŠ¤
+						REST ì˜ˆì œ</a></li>
+				<li><a href="<c:url value="/sample/boxoffice/sample2.jsp"/>">ì£¼ê°„/ì£¼ë§
+						ë°•ìŠ¤ì˜¤í”¼ìŠ¤ REST(JAVASCRIPT) ì˜ˆì œ</a></li>
+				<li><a href="<c:url value="/sample/boxoffice/sample3.jsp"/>">ì¼ë³„
+						ë°•ìŠ¤ì˜¤í”¼ìŠ¤ SOAP ì˜ˆì œ</a></li>
 			</ol>
 		</dd>
-		<dt>¿µÈ­Á¤º¸</dt>
+		<dt>ì˜í™”ì •ë³´</dt>
 		<dd>
 			<ol>
-				<li><a href="<c:url value="/sample/movie/sample1.jsp"/>">¿µÈ­Á¤º¸
-						REST ¿¹Á¦</a></li>
-				<li><a href="<c:url value="/sample/movie/sample2.jsp"/>">¿µÈ­Á¤º¸
-						REST(JAVASCRIPT) ¿¹Á¦</a></li>
-				<li><a href="<c:url value="/sample/movie/sample3.jsp"/>">¿µÈ­Á¤º¸
-						SOAP ¿¹Á¦</a></li>
+				<li><a href="<c:url value="/sample/movie/sample1.jsp"/>">ì˜í™”ì •ë³´
+						REST ì˜ˆì œ</a></li>
+				<li><a href="<c:url value="/sample/movie/sample2.jsp"/>">ì˜í™”ì •ë³´
+						REST(JAVASCRIPT) ì˜ˆì œ</a></li>
+				<li><a href="<c:url value="/sample/movie/sample3.jsp"/>">ì˜í™”ì •ë³´
+						SOAP ì˜ˆì œ</a></li>
 			</ol>
 		</dd>
-		<dt>¿µÈ­»çÁ¤º¸</dt>
+		<dt>ì˜í™”ì‚¬ì •ë³´</dt>
 		<dd>
 			<ol>
-				<li><a href="<c:url value="/sample/company/sample1.jsp"/>">¿µÈ­»çÁ¤º¸
-						REST ¿¹Á¦</a></li>
-				<li><a href="<c:url value="/sample/company/sample2.jsp"/>">¿µÈ­»çÁ¤º¸
-						REST(JAVASCRIPT) ¿¹Á¦</a></li>
-				<li><a href="<c:url value="/sample/company/sample3.jsp"/>">¿µÈ­»çÁ¤º¸
-						SOAP ¿¹Á¦</a></li>
+				<li><a href="<c:url value="/sample/company/sample1.jsp"/>">ì˜í™”ì‚¬ì •ë³´
+						REST ì˜ˆì œ</a></li>
+				<li><a href="<c:url value="/sample/company/sample2.jsp"/>">ì˜í™”ì‚¬ì •ë³´
+						REST(JAVASCRIPT) ì˜ˆì œ</a></li>
+				<li><a href="<c:url value="/sample/company/sample3.jsp"/>">ì˜í™”ì‚¬ì •ë³´
+						SOAP ì˜ˆì œ</a></li>
 			</ol>
 		</dd>
-		<dt>¿µÈ­ÀÎÁ¤º¸</dt>
+		<dt>ì˜í™”ì¸ì •ë³´</dt>
 		<dd>
 			<ol>
-				<li><a href="<c:url value="/sample/people/sample1.jsp"/>">¿µÈ­ÀÎÁ¤º¸
-						REST ¿¹Á¦</a></li>
-				<li><a href="<c:url value="/sample/people/sample2.jsp"/>">¿µÈ­ÀÎÁ¤º¸
-						REST(JAVASCRIPT) ¿¹Á¦</a></li>
-				<li><a href="<c:url value="/sample/people/sample3.jsp"/>">¿µÈ­ÀÎÁ¤º¸
-						SOAP ¿¹Á¦</a></li>
+				<li><a href="<c:url value="/sample/people/sample1.jsp"/>">ì˜í™”ì¸ì •ë³´
+						REST ì˜ˆì œ</a></li>
+				<li><a href="<c:url value="/sample/people/sample2.jsp"/>">ì˜í™”ì¸ì •ë³´
+						REST(JAVASCRIPT) ì˜ˆì œ</a></li>
+				<li><a href="<c:url value="/sample/people/sample3.jsp"/>">ì˜í™”ì¸ì •ë³´
+						SOAP ì˜ˆì œ</a></li>
 			</ol>
 		</dd>
 		<dd>
@@ -59,7 +59,30 @@
 				<li><script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 					<script src="https://cdn.iamport.kr/js/iamport.payment-1.2.1.js"></script>
 
-					<button onclick="requestPay()">5000¿ø ÃæÀüÇÏ±â</button> <script>
+					<button onclick="requestPay8()">100ì› ì¶©ì „í•˜ê¸°</button> <script>
+						IMP.init("imp83031471");
+
+						function requestPay8() {
+							IMP.request_pay({
+							    pg : 'kakaopay',
+							    pay_method : 'card', //ìƒëžµ ê°€ëŠ¥
+							    merchant_uid: "order_no_0005", // ìƒì ì—ì„œ ê´€ë¦¬í•˜ëŠ” ì£¼ë¬¸ ë²ˆí˜¸
+							    name : 'ì£¼ë¬¸ëª…:ê²°ì œí…ŒìŠ¤íŠ¸',
+							    amount : 100,
+							    buyer_email : 'iamport@siot.do',
+							    buyer_name : 'êµ¬ë§¤ìžì´ë¦„',
+							    buyer_tel : '010-1234-5678',
+							    buyer_addr : 'ì„œìš¸íŠ¹ë³„ì‹œ ê°•ë‚¨êµ¬ ì‚¼ì„±ë™',
+							    buyer_postcode : '123-456'
+							}, function(rsp) { // callback ë¡œì§
+								system.out.println(rsp);
+							});
+						}
+					</script></li>
+				<li><script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+					<script src="https://cdn.iamport.kr/js/iamport.payment-1.2.1.js"></script>
+
+					<button onclick="requestPay()">5000ì› ì¶©ì „í•˜ê¸°</button> <script>
 						IMP.init("imp83031471");
 
 						function requestPay() {
@@ -76,7 +99,7 @@
 					<li><script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 					<script src="https://cdn.iamport.kr/js/iamport.payment-1.2.1.js"></script>
 
-					<button onclick="requestPay2()">10000¿ø ÃæÀüÇÏ±â</button> <script>
+					<button onclick="requestPay2()">10000ì› ì¶©ì „í•˜ê¸°</button> <script>
 						IMP.init("imp83031471");
 
 						function requestPay2() {
@@ -92,7 +115,7 @@
 					<li><script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 					<script src="https://cdn.iamport.kr/js/iamport.payment-1.2.1.js"></script>
 
-					<button onclick="requestPay3()">30000¿ø ÃæÀüÇÏ±â</button> <script>
+					<button onclick="requestPay3()">30000ì› ì¶©ì „í•˜ê¸°</button> <script>
 						IMP.init("imp83031471");
 
 						function requestPay3() {
@@ -108,7 +131,7 @@
 					<li><script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 					<script src="https://cdn.iamport.kr/js/iamport.payment-1.2.1.js"></script>
 
-					<button onclick="requestPay4()">50000¿ø ÃæÀüÇÏ±â</button> <script>
+					<button onclick="requestPay4()">50000ì› ì¶©ì „í•˜ê¸°</button> <script>
 						IMP.init("imp83031471");
 
 						function requestPay4() {
@@ -124,7 +147,7 @@
 					<li><script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 					<script src="https://cdn.iamport.kr/js/iamport.payment-1.2.1.js"></script>
 
-					<button onclick="requestPay5()">100000¿ø ÃæÀüÇÏ±â</button> <script>
+					<button onclick="requestPay5()">100000ì› ì¶©ì „í•˜ê¸°</button> <script>
 						IMP.init("imp83031471");
 
 						function requestPay5() {
