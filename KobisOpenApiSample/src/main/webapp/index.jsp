@@ -66,7 +66,7 @@
 							IMP.request_pay({
 							    pg : 'kakaopay',
 							    pay_method : 'card', //생략 가능
-							    merchant_uid: "order_no_0005", // 상점에서 관리하는 주문 번호
+							    merchant_uid: "order_no_0010", // 상점에서 관리하는 주문 번호
 							    name : '주문명:결제테스트',
 							    amount : 100,
 							    buyer_email : 'iamport@siot.do',
@@ -79,87 +79,31 @@
 							});
 						}
 					</script></li>
-				<li><script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+				<li>
+				<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 					<script src="https://cdn.iamport.kr/js/iamport.payment-1.2.1.js"></script>
 
-					<button onclick="requestPay()">5000원 충전하기</button> <script>
+					<button onclick="requestPay8()">100원 충전하기</button> <script>
 						IMP.init("imp83031471");
 
-						function requestPay() {
+						function requestPay8() {
 							IMP.request_pay({
-								pg : "nice",
-								pay_method : "card",
-								merchant_uid : "test_ly1e27st",
-								amount : 5000,
-								buyer_tel : "010-1234-5678",
+							    pg : 'tosspay',
+							    pay_method : 'card', //생략 가능
+							    merchant_uid: "1", // 상점에서 관리하는 주문 번호
+							    name : '주문명:결제테스트',
+							    amount : 100,
+							    buyer_email : 'iamport@siot.do',
+							    buyer_name : '구매자이름',
+							    buyer_tel : '010-1234-5678',
+							    buyer_addr : '서울특별시 강남구 삼성동',
+							    buyer_postcode : '123-456'
+							}, function(rsp) { // callback 로직
+								system.out.println(rsp);
 							});
 						}
 					</script></li>
 					
-					<li><script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-					<script src="https://cdn.iamport.kr/js/iamport.payment-1.2.1.js"></script>
-
-					<button onclick="requestPay2()">10000원 충전하기</button> <script>
-						IMP.init("imp83031471");
-
-						function requestPay2() {
-							IMP.request_pay({
-								pg : "nice",
-								pay_method : "card",
-								merchant_uid : "test_ly1e27st",
-								amount : 10000,
-								buyer_tel : "010-1234-5678",
-							});
-						}
-					</script></li>
-					<li><script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-					<script src="https://cdn.iamport.kr/js/iamport.payment-1.2.1.js"></script>
-
-					<button onclick="requestPay3()">30000원 충전하기</button> <script>
-						IMP.init("imp83031471");
-
-						function requestPay3() {
-							IMP.request_pay({
-								pg : "nice",
-								pay_method : "card",
-								merchant_uid : "test_ly1e27st",
-								amount : 30000,
-								buyer_tel : "010-1234-5678",
-							});
-						}
-					</script></li>
-					<li><script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-					<script src="https://cdn.iamport.kr/js/iamport.payment-1.2.1.js"></script>
-
-					<button onclick="requestPay4()">50000원 충전하기</button> <script>
-						IMP.init("imp83031471");
-
-						function requestPay4() {
-							IMP.request_pay({
-								pg : "nice",
-								pay_method : "card",
-								merchant_uid : "test_ly1e27st",
-								amount : 50000,
-								buyer_tel : "010-1234-5678",
-							});
-						}
-					</script></li>
-					<li><script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-					<script src="https://cdn.iamport.kr/js/iamport.payment-1.2.1.js"></script>
-
-					<button onclick="requestPay5()">100000원 충전하기</button> <script>
-						IMP.init("imp83031471");
-
-						function requestPay5() {
-							IMP.request_pay({
-								pg : "nice",
-								pay_method : "card",
-								merchant_uid : "test_ly1e27st",
-								amount : 100000,
-								buyer_tel : "010-1234-5678",
-							});
-						}
-					</script></li>
 			</ol>
 		</dd>
 	</dl>
