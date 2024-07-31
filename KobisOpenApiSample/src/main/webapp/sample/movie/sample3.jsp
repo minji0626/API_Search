@@ -23,10 +23,10 @@
 -->
     <%
     // 파라메터 설정	
-	String movieCd = request.getParameter("movieCd")==null?"20126674":request.getParameter("movieCd");						//영화코드
+	String movieCd = request.getParameter("movieCd")==null?"20228797":request.getParameter("movieCd");						//영화코드
 	
 	// 발급키
-	String key = "430156241533f1d058c603178cc3ca0e";	
+	String key = "deeb2f78a00af08af33c39554a83a1df";	
 	
 	// KOBIS 오픈 API SOAP Client를 통해 호출
 	MovieInfoResult movieInfoResult = new MovieAPIServiceImplService().getMovieAPIServiceImplPort().searchMovieInfo(key, movieCd);
